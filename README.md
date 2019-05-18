@@ -2,14 +2,14 @@
 
 1. Clone master branch to your local branch
 ```console
-git clone https://github.com/vanvo1412/Example-WebAPI.git
+git clone https://github.com/vanvo1412/UserService.git
 ```
 2. Go to the source folder
 ```console
- cd .\Example-WebAPI\
+ cd .\UserService\
  ```
  3. Build and run the sample
  ```console
- dotnet build
- dotnet run
+ dotnet build ; dotnet run
  ```
+4. Visit ```http://localhost:55555/swagger``` to see SwaggerUI
