@@ -1,5 +1,7 @@
 # .NET Web API built with in-memory database
-
+## Prerequisite
+- Install .NET Core 2.1 SDK & Runtime 
+## Guidelines
 1. Clone master branch to your local branch
 ```console
 git clone https://github.com/vanvo1412/UserService.git
