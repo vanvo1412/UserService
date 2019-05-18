@@ -63,14 +63,11 @@ namespace UserService.Controllers
             var user = _dbContext.Users.SingleOrDefault(x => x.Id == id);
             if (user != null)
             {
-                var userToUpdate = new User()
-                {
-                    Address = user.Address,
-                    Age = user.Age,
-                    Name = user.Name
-                };
-                _dbContext.Update(userToUpdate);
+                user.Address = value.Address;
+                user.Age = value.Age;
+                user.Name = value.Name;
                 _dbContext.SaveChanges();
+                return Ok();
             }
             return NotFound();
         }
